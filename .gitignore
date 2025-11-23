@@ -1,0 +1,60 @@
+# Arquivos Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Ambiente virtual
+.venv/
+venv/
+ENV/
+env/
+
+# Chaves de criptografia (IMPORTANTE: não versionar chaves reais)
+secret.key
+*.key
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Notas geradas pelo programa
+INFO_NOTE.txt
+RANSOM_NOTE.txt
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Arquivos criptografados para evitar perda acidental
+# (Em um projeto real, você pode querer incluir exemplos)
+test_files/dados_confidenciais
+test_files/senhas.txt
