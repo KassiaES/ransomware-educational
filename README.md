@@ -136,40 +136,6 @@ Malware/
 **Problema**: `TypeError: expected str, bytes or os.PathLike object, not BufferedReader`
 **Solução**: Renomeação de variáveis (`file` → `file_path`)
 
-## 📚 Conceitos Aprendidos
-
-### Criptografia
-- **Fernet**: Implementação segura de criptografia simétrica
-- **Chaves**: Geração, armazenamento e carregamento
-- **Base64**: Codificação para transporte seguro
-
-### Segurança
-- **Detecção Comportamental**: Como antivírus detectam malware
-- **Engenharia Social**: Técnicas de mensagens de ransomware
-- **Mitigação**: Estratégias para reduzir detecção
-
-### Programação
-- **Manipulação de Arquivos**: Leitura/escrita binária
-- **Recursão de Diretórios**: `os.walk()` para varredura
-- **Tratamento de Erros**: Prevenção de falhas
-
-## 🔬 Exercícios Propostos
-
-### Básico
-1. **Modifique o filtro** para criptografar apenas arquivos `.txt`
-2. **Adicione logging** para registrar arquivos processados
-3. **Implemente verificação** de integridade dos arquivos
-
-### Intermediário
-1. **Criptografia assimétrica**: Use RSA ao invés de Fernet
-2. **Interface gráfica**: Crie GUI com tkinter
-3. **Backup automático**: Salve cópias antes da criptografia
-
-### Avançado
-1. **Rede**: Implemente comunicação com servidor remoto
-2. **Steganografia**: Esconda a chave em imagens
-3. **Análise forense**: Ferramenta para detectar criptografia
-
 ## ⚖️ Aspectos Legais e Éticos
 
 ### ✅ Uso Permitido
@@ -217,5 +183,3 @@ Este projeto é para fins **exclusivamente educacionais**. O uso inadequado é d
 **⚠️ Lembre-se**: O conhecimento sobre segurança deve ser usado para proteger, não para atacar. Este exercício visa formar profissionais capazes de defender sistemas contra ameaças reais.
 
 ---
-
-*Projeto desenvolvido para fins educacionais em Novembro de 2025*
