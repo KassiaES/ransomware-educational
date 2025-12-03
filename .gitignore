@@ -58,3 +58,5 @@ Thumbs.db
 # (Em um projeto real, você pode querer incluir exemplos)
 test_files/dados_confidenciais
 test_files/senhas.txt
+# Snyk Security Extension - AI Rules (auto-generated)
+.github/instructions/snyk_rules.instructions.md

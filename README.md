@@ -48,25 +48,49 @@ Malware/
 
 ## 🚀 Como Executar
 
-### 1. Criptografia (Simulação do Ransomware)
+### Método 1: Usando o Ambiente Virtual (Recomendado)
+
+#### 1. Criptografia (Simulação do Ransomware)
 ```powershell
 # Usando ambiente virtual
 & ".\.venv\Scripts\python.exe" ransoware.py
 ```
 
-**O que acontece:**
-- ✅ Gera uma chave de criptografia única (`secret.key`)
-- ✅ Criptografa todos os arquivos na pasta `test_files/`
-- ✅ Cria uma nota informativa (`INFO_NOTE.txt`)
-- ✅ Exibe: "Files have been processed for educational demonstration!"
-
-### 2. Descriptografia (Ferramenta de Recuperação)
+#### 2. Descriptografia (Ferramenta de Recuperação)
 ```powershell
 # Usando ambiente virtual
 & ".\.venv\Scripts\python.exe" descrypty.py
 ```
 
-**O que acontece:**
+### Método 2: Usando exec() - Alternativa Direta
+
+#### 1. Criptografia
+```python
+# Execute no Python ou em um terminal Python interativo
+exec(open('ransoware.py').read())  # para criptografar
+```
+
+#### 2. Descriptografia
+```python
+# Execute no Python ou em um terminal Python interativo
+exec(open('descrypty.py').read())  # para descriptografar
+```
+
+**Vantagens do Método 2:**
+- ✅ Evita problemas de PATH do Windows
+- ✅ Não requer configuração específica do PowerShell
+- ✅ Funciona diretamente no interpretador Python
+- ✅ Útil quando há conflitos de codificação de caracteres
+
+### Resultados de Ambos os Métodos:
+
+**Após Criptografia:**
+- ✅ Gera uma chave de criptografia única (`secret.key`)
+- ✅ Criptografa todos os arquivos na pasta `test_files/`
+- ✅ Cria uma nota informativa (`INFO_NOTE.txt`)
+- ✅ Exibe: "Files have been processed for educational demonstration!"
+
+**Após Descriptografia:**
 - ✅ Carrega a chave de criptografia (`secret.key`)
 - ✅ Descriptografa todos os arquivos na pasta `test_files/`
 - ✅ Restaura os arquivos ao estado original
